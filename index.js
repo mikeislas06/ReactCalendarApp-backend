@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const morgan = require('morgan');
 require('dotenv').config();
 
 const { dbConnection } = require('./database/config.database');
@@ -14,6 +15,9 @@ dbConnection();
 
 // CORS
 app.use(cors());
+
+// Morgan
+app.use(morgan());
 
 // Directorio Public
 app.use(express.static('public'));
