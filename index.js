@@ -17,7 +17,7 @@ dbConnection();
 app.use(cors());
 
 // Morgan
-app.use(morgan());
+app.use(morgan('combined'));
 
 // Directorio Public
 app.use(express.static('public'));
