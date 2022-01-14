@@ -16,7 +16,7 @@ dbConnection();
 // CORS
 app.use(
   cors({
-    origin: '*',
+    origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   })
 );
