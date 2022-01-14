@@ -17,7 +17,7 @@ dbConnection();
 app.use(
   cors({
     origin: true,
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
   })
 );
 // app.use((req, res, next) => {
